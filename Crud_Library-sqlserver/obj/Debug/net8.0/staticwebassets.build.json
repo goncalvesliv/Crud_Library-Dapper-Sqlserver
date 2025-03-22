@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "S9sc5rSXlJQ7y4vXQceiuN+70VtoqaIPAl+W/n9MpDo=",
+  "Source": "Crud_Library-sqlserver",
+  "BasePath": "_content/Crud_Library-sqlserver",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
