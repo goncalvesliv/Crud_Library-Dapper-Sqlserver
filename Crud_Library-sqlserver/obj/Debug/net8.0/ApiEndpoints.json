@@ -27,22 +27,6 @@
   },
   {
     "ContainingType": "Crud_Library_sqlserver.Controllers.BookController",
-    "Method": "EditarBook",
-    "RelativePath": "api/Book",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "bookEditarDto",
-        "Type": "Crud_Library_sqlserver.Dto.BookEditarDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Crud_Library_sqlserver.Controllers.BookController",
     "Method": "RemoverBook",
     "RelativePath": "api/Book",
     "HttpMethod": "DELETE",
@@ -68,6 +52,27 @@
       {
         "Name": "bookId",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Crud_Library_sqlserver.Controllers.BookController",
+    "Method": "EditarBook",
+    "RelativePath": "api/Book/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "bookEditarDto",
+        "Type": "Crud_Library_sqlserver.Dto.BookEditarDto",
         "IsRequired": true
       }
     ],

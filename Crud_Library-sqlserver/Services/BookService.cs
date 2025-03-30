@@ -19,13 +19,13 @@ namespace Crud_Library_sqlserver.Services
 
         public async Task<ResponseModel<BookListarDto>> BuscarBookPorId(int bookId)
         {
-             ResponseModel < BookListarDto > response = new ResponseModel<BookListarDto> ();
+             ResponseModel <BookListarDto> response = new ResponseModel<BookListarDto> ();
             using(var connection = new SqlConnection(_configuration.GetConnectionString("DefaultConnection"))) 
             {
-                var bookBanco = await connection.QueryFirstOrDefaultAsync<Book>("select * from Books where id = @Id" , new {Id = bookId});
+                var bookBanco = await connection.QueryFirstOrDefaultAsync<BookListarDto>("select * from Books where id = @Id" , new {Id = bookId});
 
-                var bookMapeado = _mapper.Map<BookListarDto>(bookBanco);
-                response.Dados = bookMapeado;
+                //var bookMapeado = _mapper.Map<BookListarDto>(bookBanco);
+                response.Dados = bookBanco;
 
                 return response;
             }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Crud_Library-sqlserver")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+184652e5d3f8c40aa143a674c991162b12674386")]
 [assembly: System.Reflection.AssemblyProductAttribute("Crud_Library-sqlserver")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Crud_Library-sqlserver")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

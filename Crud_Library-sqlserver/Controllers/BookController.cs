@@ -41,14 +41,19 @@ namespace Crud_Library_sqlserver.Controllers
             return Ok(books);
         }
 
-        [HttpPut]
-        public async Task<IActionResult> EditarBook(BookEditarDto bookEditarDto)
-
+        [HttpPut("{id}")]
+        public async Task<IActionResult> EditarBook(int id, [FromBody] BookEditarDto bookEditarDto)
         {
+            if (id != bookEditarDto.Id)
+            {
+                return BadRequest("O ID da URL não corresponde ao ID do objeto.");
+            }
+
             var books = await _bookInterface.EditarBook(bookEditarDto);
 
             return Ok(books);
         }
+
 
         [HttpDelete]
         public async Task<IActionResult> RemoverBook(int bookId)
